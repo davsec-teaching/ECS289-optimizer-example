@@ -1,7 +1,6 @@
 # llvm-pass-skeleton
 
-A completely useless LLVM pass.
-It's for LLVM 17.
+Replaces less frequenstly used heap objects with a call to `slow_malloc` in the LLVM IR.
 
 Build:
 
@@ -14,4 +13,4 @@ Build:
 
 Run:
 
-    $ clang -fpass-plugin=`echo build/skeleton/SkeletonPass.*` something.c
+    $ ./run.sh
